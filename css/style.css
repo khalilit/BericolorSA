@@ -1,0 +1,104 @@
+
+/* import fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/* generic  */
+body{
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+a:hover{
+    color: #1a88bb;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.primary-color{
+    color: #1a88bb;
+}
+
+.primary-background{
+    background: #1a88bb;
+    color: #fff;
+}
+
+
+.container{
+    margin:auto;
+}
+
+/* --------- header ---------- */
+
+#main-header .container{
+    border-bottom : 1px solid #1a88bb;
+}
+
+#main-header h1{
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+#navbar li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 0.8em;
+}
+
+#navbar .fa{
+    margin-right: 0.5em;
+}
+
+/* ---------- Section ----------------*/
+#showcase .interior{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 1em;
+}
+
+
+#access{
+    /* border: 1px solid #1a88bb; */
+    border-radius: 5px;
+}
+
+#access li{
+    list-style: none;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.interior .header{
+    background-size: cover;
+    background: url(../images/app1.jpg) 50% 50% no-repeat;
+    height: 290px;
+    margin-bottom: 1em;
+}
+
+.interior .studio{
+    background-image: url(../images/app2.jpg) 
+}
+
+.interior .header h3{
+    background: rgba(0,0,0, 0.5);
+    padding: 1em 2em;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.interior .header h3:hover{
+     background: rgba(26, 136, 187, 0.5);
+}
+
+.features,.hobbies{
+    display: none;
+}
