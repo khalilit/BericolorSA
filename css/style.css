@@ -38,7 +38,7 @@ img{
 /* --------- header ---------- */
 
 #main-header .container{
-    border-bottom : 1px solid #1a88bb;
+    
 }
 
 #main-header h1{
@@ -57,22 +57,82 @@ img{
 }
 
 /* ---------- Section ----------------*/
-#showcase .interior{
+.banner{
+    position: relative;
+    height: 540px;
+    overflow: hidden;
+    margin: 0 -8px;
+    background: url(../images/banner2.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    border-top : 1px solid #1a88bb;
+}
+
+.banner h1{
+    background: rgba(255,255,255, 0.7);
+    color: #333;
+    padding: 0.8em 2em;
+    border-radius: 10px;
+    font-weight: normal;
+    font-size: 26px;
+}
+
+.banner h1 span{
+    color: rgb(218, 35, 28);
+    font-size: .8em;
+}
+
+.interior{
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 0 1em;
+    position: relative;
+}
+
+.interior{
+ border-color: rgb(26, 187, 112);
+}
+
+.interior a:hover{
+    color: rgb(26, 187, 112);
 }
 
 
 #access{
-    /* border: 1px solid #1a88bb; */
     border-radius: 5px;
+    position: relative;
 }
 
 #access li{
     list-style: none;
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 1.3em;
+}
+
+.features > div{
+    position: absolute;
+    padding: 0 1em 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background: #fff;
+    left: 1em;
+    top: calc(100% + 1.3em);
+    z-index: 111;
+    font-size: 0.7em;
+}
+
+.features > div i{
+    background: #fff;
+    position: absolute;
+    top: -1.3em;
+    padding: 0.2em 1em;
+    border: 1px solid #ccc;
+    border-bottom: 0 none;
+    border-radius: 5px 5px 0 0;
+}
+
+.hobbies > div{
+    display: none;
 }
 
 .interior .header{
@@ -80,25 +140,79 @@ img{
     background: url(../images/app1.jpg) 50% 50% no-repeat;
     height: 290px;
     margin-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+    position: relative;
 }
 
-.interior .studio{
-    background-image: url(../images/app2.jpg) 
-}
-
-.interior .header h3{
-    background: rgba(0,0,0, 0.5);
-    padding: 1em 2em;
+.interior .header h3 a{
+    background: rgba(26, 187, 112, 0.7);
+    padding: 0.8em 2.5em;
     color: #fff;
     border-radius: 5px;
     font-weight: normal;
     text-transform: uppercase;
+    font-size: 0.9em;
 }
 
-.interior .header h3:hover{
-     background: rgba(26, 136, 187, 0.5);
+.interior .header h3 a:hover{
+    background: rgba(26, 187, 112, 0.9);
 }
 
-.features,.hobbies{
+.price{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background:rgba(11,11,11, 0.9);
+    margin: 0;
+    padding: 0.5em 1.5em;
+    color: #fff;
+    border-top: 0 none;
+    border-right: 0 none;
+    border-radius:5px 0 0 0 ;
+    text-transform: uppercase;
+}
+
+
+/* .features,.hobbies{
     display: none;
+} */
+
+
+
+/* Style 1 - type2 */
+.interior.type2{
+ border-color: rgb(187, 163, 26);
 }
+
+.interior.type2 a:hover{
+    color: rgb(187, 163, 26);
+}
+
+.interior.type2 .header h3 a{
+    background: rgba(187, 163, 26, 0.7);
+    color: #fff;
+}
+
+.interior.type2 .header h3 a:hover{
+     background: rgba(187, 163, 26, 0.9);
+}
+
+/* Style 1 - type3 */
+
+.interior.type3{
+ border-color: rgb(218, 35, 28);
+}
+
+.interior.type3 a:hover{
+    color: rgb(218, 35, 28);
+}
+
+.interior.type3 .header h3 a{
+    background: rgba(218, 35, 28, 0.7);
+    color: #fff;
+}
+
+.interior.type3 .header h3 a:hover{
+     background: rgba(218, 35, 28, 0.9);
+}
+
